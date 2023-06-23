@@ -6,7 +6,6 @@
       ansible.builtin.debug:
         msg: Hello World
 
-
     - name: Include Universe file
       ansible.builtin.include_tasks:
         file: Universe.yaml
