@@ -9,3 +9,15 @@
 
 
 
+- name: Register Variable
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Shell Command
+      ansible.builtin.shell: uptime
+      register: output
+
+    - name: Print o/p
+      ansible.builtin.debug:
+        msg: "{{ output }}"
+
