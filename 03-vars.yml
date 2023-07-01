@@ -1,11 +1,11 @@
-- name: Declare variable
-  hosts: all
-  vars:
-    URL: example.com
-  tasks:
-    - name: print the URL variable
-      ansible.builtin.debug:
-        msg: URL - {{ URL }}
+#- name: Declare variable
+#  hosts: all
+#  vars:
+#    URL: example.com
+#  tasks:
+#    - name: print the URL variable
+#      ansible.builtin.debug:
+#        msg: URL - {{ URL }}
 
 
 
