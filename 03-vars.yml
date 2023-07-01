@@ -19,5 +19,6 @@
 
     - name: Print o/p
       ansible.builtin.debug:
-        msg: "{{ output }}"
+        msg: "{{ output.stdout | split(' ') }}"
+
 
